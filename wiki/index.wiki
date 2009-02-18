@@ -2,10 +2,8 @@
 
 index.html
 
-
 = Details =
 
-Add your content here.  Format your content with:
 index.html is the web page used for displaying all of the different containers used in carrotEngine. it consists of the following containers (divs).
 
 debug - this div can be turned on through javascript. it displays all of the debug output when running the engine. it is just populated with whatever the engine is doing at the time; displaying choices, starting up, etc.
