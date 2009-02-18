@@ -3,16 +3,24 @@
 carrotEngine.js is the engine for the game. it receives data from the game files, and then loads up the appropriate text / images / music for the scene.
 
 = Javascript Objects and Their Properties =
-Game
-  * *directory* - defines which directory carrotEngine should load the game from. this will allow you to have multiple games available that are all run by the same engine. so if your game is in a subdirectory called my_new_game, you would have this.directory set to *this.directory = "my_new_game";*
-  * *show_debug* - when this is set to 1, the debug container will be displayed
-  * *timer* - can be used by a game needing a global timer
-  * *counter* - can be used by a game needed a global counter
+Game - this an object to let the engine know which directory to load the game data from, and also has some properties for counters and timers
+  * *directory* - string - defines which directory carrotEngine should load the game from. this will allow you to have multiple games available that are all run by the same engine. so if your game is in a subdirectory called my_new_game, you would have this.directory set to *this.directory = "my_new_game";*
+  * *show_debug* - Boolean - when this is set to 1, the debug container will be displayed
+  * *timer* - integer - can be used by a game needing a global timer
+  * *counter* - integer - can be used by a game needed a global counter
 
-Player
-  * *player_name* - the name of the player character. gets set either by the game data, or by user input in *displayNameEntryScreen()*
-  * *hitpoints, strength, intelligence, charisma* - these can be used in *game.js* for doing calculations about the character
-  * *experience* - total amount of experience points. this can be used in *game.js* to increase the player's level
-  * *level* - current player level. this can be updated when conditions are met based on experience points
-  * *lives* - the number of chances the player has before the game is over
+Player - this object is used for the character controlled by the player
+  * *player_name* - string - the name of the player character. gets set either by the game data, or by user input in *displayNameEntryScreen()*
+  * *hitpoints, strength, intelligence, charisma* - integer - these can be used in *game.js* for doing calculations about the character
+  * *experience* - integer - total amount of experience points. this can be used in *game.js* to increase the player's level
+  * *level* - integer - current player level. this can be updated when conditions are met based on experience points
+  * *lives* - integer - the number of chances the player has before the game is over
+
+Character - this object is a generic object for non player characters in the game
+  * *hitpoints, strength, intelligence, charisma* - integer - these can be used in *game.js* for doing calculations about the character
+  * *x_position* - integer - the horizontal position of the character image relative to the viewport
+  * *y_position* - integer - the vertical position of the character image relative to the viewport
+  * *interested, amused, happy, sad, angry, confused, tired* - string - these can be set to different images that get displayed when a character is feeling a certain way
+  * *attack_1, attack_2, attack_3, attack_4* - string - these can be set to different images that get displayed when the enemy does an attack
+  * *damage_1, damage_2, damage_3, damage_4* - integer - these can be set to remove a certain number of hitpoints from the Player.
  
