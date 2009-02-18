@@ -1,6 +1,6 @@
-= Introduction =
+= Getting Started =
 
-Getting Started - index.html
+index.html
 
 
 = Details =
