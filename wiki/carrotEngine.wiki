@@ -1,0 +1,11 @@
+= Getting Started =
+
+carrotEngine.js is the engine for the game. it receives data from the game files, and then loads up the appropriate text / images / music for the scene.
+
+= Javascript Objects and Their Properties =
+Game
+  * *directory* - defines which directory carrotEngine should load the game from. this will allow you to have multiple games available that are all run by the same engine. so if your game is in a subdirectory called my_new_game, you would have this.directory set to *this.directory = "my_new_game";*
+  * *show_debug* - when this is set to 1, the debug container will be displayed
+  * *timer* - can be used by a game needing a global timer
+  * *counter* - can be used by a game needed a global counter
+ 
