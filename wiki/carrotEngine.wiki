@@ -8,4 +8,11 @@ Game
   * *show_debug* - when this is set to 1, the debug container will be displayed
   * *timer* - can be used by a game needing a global timer
   * *counter* - can be used by a game needed a global counter
+
+Player
+  * *player_name* - the name of the player character. gets set either by the game data, or by user input in *displayNameEntryScreen()*
+  * *hitpoints, strength, intelligence, charisma* - these can be used in *game.js* for doing calculations about the character
+  * *exeperience* - total amount of experience points. this can be used in *game.js* to increase the player's level
+  * *level* - current player level. this can be updated when conditions are met based on experience points
+  * *lives* - the number of chances the player has before the game is over
  
