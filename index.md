@@ -1,0 +1,21 @@
+# Getting Started #
+index.html is the web page used for displaying all of the different containers used in carrotEngine. it consists of the following containers (divs).
+
+# Containers #
+**debug** - this div can be turned on through javascript. it displays all of the debug output when running the engine. it is just populated with whatever the engine is doing at the time; displaying choices, starting up, etc.
+
+**game\_screen** - this is the main container for all of the game components.
+
+**viewport** - this is the container where all of the action takes place.
+
+**menu** - this displays the menus in the game. the default menu only contains a File section, but you can add on to the menu when you are making your own game.
+
+**viewport\_background** - this is the image file used to display the background
+
+**character\_set\_box** - this is the box that is displayed when you need the player to enter in some information such as their name.
+
+**message\_box** - this is the container for the messages displayed in the game
+
+**message\_text** - this is the container for the text that gets displayed to the user, and it also used to display choices.
+
+**message\_next** - this is used to go to the next message

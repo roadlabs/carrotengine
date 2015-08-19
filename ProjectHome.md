@@ -1,0 +1,1 @@
+this is a javascript based visual novel engine. you supply it with the data, and it presents it to the user to interact with. it uses jquery for everything, and is cross browser compatible.
